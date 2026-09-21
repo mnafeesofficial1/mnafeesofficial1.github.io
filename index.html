@@ -3,172 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Nafees | Professional Portfolio</title>
-    <!-- Premium Icons Grid -->
+    <title>M. Nafees | Elite Digital Portfolio</title>
+    <!-- FontAwesome for Visual Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Google Fonts for High-End Typography -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            --bg-dark: #070a13;
-            --card-bg: #111726;
-            --primary: #00f2fe;
-            --secondary: #9d4edd;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --whatsapp-color: #25D366;
-            --glow: 0 0 20px rgba(0, 242, 254, 0.25);
+            --bg: #030712;
+            --surface: #0f172a;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --text: #f8fafc;
+            --text-alt: #94a3b8;
+            --whatsapp: #22c55e;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
-        body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.7; overflow-x: hidden; }
 
-        /* Luxury Cyber-Glow Header */
+        /* Premium Minimalistic Glow Header */
         header { 
-            background: radial-gradient(circle at top right, rgba(157, 78, 221, 0.15), transparent), 
-                        radial-gradient(circle at bottom left, rgba(0, 242, 254, 0.1), transparent), var(--bg-dark);
-            padding: 120px 20px 90px 20px; 
+            padding: 140px 20px 100px 20px; 
             text-align: center; 
             position: relative;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.15), transparent 60%);
         }
-        .profile-container { margin-bottom: 20px; }
-        .profile-icon { font-size: 4.5rem; color: var(--primary); margin-bottom: 15px; filter: drop-shadow(var(--glow)); animation: pulse 2s infinite; }
-        header h1 { font-size: 3.8rem; margin-bottom: 15px; background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; letter-spacing: -1px; }
         
-        /* Auto-Typing Dynamic Style */
-        .typing-text { font-size: 1.5rem; color: var(--text-main); font-weight: 500; min-height: 40px; }
-        #dynamic-text { color: var(--primary); font-weight: 600; text-shadow: var(--glow); }
-        .cursor { display: inline-block; width: 3px; background-color: var(--primary); animation: blink 0.8s infinite; margin-left: 5px; }
+        .hero-badge {
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
 
-        .container { max-width: 950px; margin: 0 auto; padding: 40px 20px; }
+        header h1 { 
+            font-size: 4rem; 
+            margin-bottom: 15px; 
+            font-weight: 800; 
+            letter-spacing: -2px;
+            background: linear-gradient(135deg, #ffffff 40%, var(--text-alt));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         
-        /* Premium Floating Glass Cards */
+        /* Interactive Auto-Typing Display */
+        .typing-text { font-size: 1.6rem; color: var(--text-alt); font-weight: 400; }
+        #dynamic-text { color: var(--primary); font-weight: 600; border-right: 3px solid var(--primary); padding-right: 5px; animation: blink-cursor 0.75s step-end infinite; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* Glassmorphic Smooth Section Blocks */
         section { 
-            background: rgba(17, 23, 38, 0.7); 
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             padding: 45px; 
             margin-bottom: 40px; 
-            border-radius: 20px; 
-            border: 1px solid rgba(255, 255, 255, 0.05); 
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 24px; 
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         section:hover { 
-            transform: translateY(-8px); 
-            border-color: rgba(0, 242, 254, 0.25); 
-            box-shadow: 0 30px 60px rgba(0, 242, 254, 0.1);
+            transform: translateY(-5px); 
+            border-color: rgba(56, 189, 248, 0.2);
+            background: rgba(15, 23, 42, 0.6);
+            box-shadow: 0 30px 60px -15px rgba(0,0,0,0.8);
         }
         
-        h2 { color: var(--primary); margin-bottom: 30px; font-size: 2rem; display: flex; align-items: center; gap: 15px; letter-spacing: -0.5px; }
-        h2 i { font-size: 1.6rem; color: var(--secondary); }
+        h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 30px; display: flex; align-items: center; gap: 12px; color: #fff; letter-spacing: -0.5px; }
+        h2 i { color: var(--primary); font-size: 1.4rem; }
 
-        /* Interactive Filter Tabs */
-        .filter-tabs { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
-        .tab-btn { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); color: var(--text-main); padding: 10px 22px; border-radius: 30px; cursor: pointer; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; }
-        .tab-btn.active, .tab-btn:hover { background: linear-gradient(to right, var(--primary), #00b4d8); color: #070a13; box-shadow: 0 0 20px rgba(0, 242, 254, 0.5); border-color: transparent; }
+        /* Modern Grid Architecture for Capabilities */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+        .skill-card { 
+            background: rgba(255, 255, 255, 0.01); 
+            border: 1px solid rgba(255, 255, 255, 0.03); 
+            padding: 30px 24px; 
+            border-radius: 16px; 
+            transition: all 0.3s ease;
+        }
+        .skill-card:hover { background: rgba(255, 255, 255, 0.03); border-color: rgba(255,255,255,0.08); }
+        .skill-card i { font-size: 2.2rem; color: var(--accent); margin-bottom: 15px; display: block; }
+        .skill-card h3 { font-size: 1.25rem; margin-bottom: 8px; color: #fff; }
+        .skill-card p { color: var(--text-alt); font-size: 0.9rem; }
 
-        /* Modern Custom Grid Badges */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 25px; }
-        .skill-box { background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); padding: 25px 20px; border-radius: 16px; text-align: center; transition: all 0.3s ease; }
-        .skill-box:hover { background: rgba(255,255,255,0.04); transform: scale(1.03); border-color: rgba(157, 78, 221, 0.3); }
-        .skill-box i { font-size: 2.5rem; margin-bottom: 15px; display: block; }
-        .skill-box.dev i { color: var(--primary); }
-        .skill-box.smm i { color: #ff007f; }
-        .skill-box.seo i { color: #00ff87; }
-        .skill-box.db i { color: #ffbe0b; }
+        /* Project Display Systems */
+        .project-block { 
+            background: rgba(3, 7, 18, 0.4); 
+            padding: 30px; 
+            border-radius: 16px; 
+            border: 1px solid rgba(255,255,255,0.02);
+            margin-bottom: 20px; 
+            transition: all 0.3s ease;
+        }
+        .project-block:hover { border-color: rgba(129, 140, 242, 0.2); transform: scale(1.01); }
+        .project-block h3 { color: #fff; font-size: 1.3rem; margin-bottom: 10px; }
+        .project-block p { color: var(--text-alt); font-size: 0.95rem; }
+        .tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .tag-badge { font-size: 0.75rem; background: rgba(255,255,255,0.04); color: var(--primary); padding: 4px 12px; border-radius: 6px; font-weight: 600; }
 
-        /* Elegant Project Architecture Cards */
-        .project-card { background: rgba(7, 10, 19, 0.6); padding: 30px; border-radius: 16px; border-left: 5px solid var(--secondary); margin-bottom: 25px; transition: all 0.3s ease; }
-        .project-card:hover { transform: translateX(8px); background: rgba(7, 10, 19, 0.8); border-left-color: var(--primary); }
-        .project-card h3 { margin-bottom: 10px; color: #fff; font-size: 1.4rem; }
-        .project-card p { color: var(--text-muted); font-size: 1rem; }
-        .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
-        .tag { font-size: 0.8rem; background: rgba(157, 78, 221, 0.12); color: #c8b6ff; padding: 4px 12px; border-radius: 6px; font-weight: 600; border: 1px solid rgba(157, 78, 221, 0.2); }
+        /* High-End Clean Contact Framework */
+        .action-row { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 25px; }
+        .action-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 10px; 
+            padding: 14px 30px; 
+            border-radius: 12px; 
+            font-weight: 600; 
+            text-decoration: none; 
+            font-size: 0.95rem; 
+            transition: all 0.3s ease; 
+        }
+        .btn-fill { background: var(--text); color: var(--bg); }
+        .btn-fill:hover { background: var(--primary); color: var(--bg); transform: translateY(-2px); }
+        .btn-outline { background: transparent; color: var(--text); border: 1px solid rgba(255,255,255,0.1); }
+        .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-        /* Social Connection Framework */
-        .social-grid { display: flex; flex-wrap: wrap; gap: 15px; }
-        .btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 32px; border-radius: 10px; font-weight: 600; text-decoration: none; font-size: 1rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); cursor: pointer; border: none; }
-        .btn-primary { background: linear-gradient(to right, var(--primary), #00b4d8); color: #070a13; box-shadow: 0 5px 20px rgba(0, 242, 254, 0.3); }
-        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0, 242, 254, 0.5); }
-        .btn-secondary { background: rgba(255,255,255,0.03); color: var(--text-main); border: 1px solid rgba(255,255,255,0.08); }
-        .btn-secondary:hover { background: rgba(255,255,255,0.08); transform: translateY(-4px); border-color: var(--secondary); }
-
-        /* Premium Floating WhatsApp System */
-        .whatsapp-float {
+        /* Fixed High-Performance Floating WhatsApp System */
+        .whatsapp-anchor {
             position: fixed;
-            bottom: 35px;
-            right: 35px;
-            background-color: var(--whatsapp-color);
-            color: white;
-            width: 65px;
-            height: 65px;
+            bottom: 40px;
+            right: 40px;
+            background-color: var(--whatsapp);
+            color: #fff;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            text-align: center;
-            font-size: 35px;
-            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
-            z-index: 100;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+            z-index: 9999;
             text-decoration: none;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            animation: bounce 2s infinite;
         }
-        .whatsapp-float:hover {
-            transform: scale(1.12) rotate(8deg);
-            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+        .whatsapp-anchor:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 15px 30px rgba(34, 197, 94, 0.5);
         }
 
-        /* Essential System Keyframes */
-        @keyframes blink { 50% { opacity: 0; } }
-        @keyframes pulse { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.2)); } 50% { transform: scale(1.06); filter: drop-shadow(0 0 25px rgba(0, 242, 254, 0.5)); } }
-        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+        /* Essential Structural Animations */
+        @keyframes blink-cursor { from, to { border-color: transparent } 50% { border-color: var(--primary); } }
 
         @media(max-width: 768px) {
-            header h1 { font-size: 2.8rem; }
+            header h1 { font-size: 2.8rem; letter-spacing: -1px; }
             section { padding: 30px 20px; }
-            .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; font-size: 28px; }
+            .whatsapp-anchor { bottom: 25px; right: 25px; width: 55px; height: 55px; font-size: 28px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Functional WhatsApp Portal Framework (Real Number Integrated) -->
-    <a href="https://wa.me!" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <!-- Ultra-Secure Universal WhatsApp Redirect Link Architecture (Fixed Number Deployment) -->
+    <a href="https://whatsapp.com." 
+       class="whatsapp-anchor" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       title="Connect on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <header>
-        <div class="profile-container">
-            <i class="fa-solid fa-terminal profile-icon"></i>
-        </div>
+        <span class="hero-badge">Available for Projects & Freelance</span>
         <h1>Muhammad Nafees</h1>
-        <!-- JavaScript Dynamic Automated Matrix -->
-        <div class="typing-text">I am a Professional <span id="dynamic-text"></span><span class="cursor">|</span></div>
+        <div class="typing-text">Specialized in <span id="dynamic-text"></span></div>
     </header>
 
     <div class="container">
         
-        <!-- About Portal -->
+        <!-- Statement Portal -->
         <section>
-            <h2><i class="fa-regular fa-id-badge"></i> Executive Summary</h2>
-            <p>I am a multifaceted Technology Specialist with verified expertise in Web Development, Technical SEO Frameworks, and Strategic Social Media Operations. By linking optimized backend engineering with systematic digital marketing, I create growth-driven web platforms built to rank, scale, and maximize engagement.</p>
+            <h2><i class="fa-regular fa-compass"></i> Overview</h2>
+            <p style="color: var(--text-alt); font-size: 1.05rem;">I am a strategic digital architect seamlessly handling Web Development, Tech SEO Architectures, and Live Social Media Campaigns. I deploy high-performance clean systems designed to acquire organic traffic, establish online visibility, and drive modern brand engagement.</p>
         </section>
 
-        <!-- Dynamic Competencies Infrastructure -->
+        <!-- Core Fields Grid System -->
         <section>
-            <h2><i class="fa-solid fa-layer-group"></i> Professional Capabilities</h2>
+            <h2><i class="fa-solid fa-shapes"></i> Expertise Matrix</h2>
             <div class="skills-grid">
-                <div class="skill-box dev">
-                    <i class="fa-solid fa-code"></i>
+                <div class="skill-card">
+                    <i class="fa-solid fa-cubes"></i>
                     <h3>Web Development</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">WordPress, FastAPI, HTML5, CSS3, GitHub</p>
+                    <p>Building high-end clean backends and custom themes using WordPress, FastAPI, HTML5, CSS3, and organized deployment pipelines via Git.</p>
                 </div>
-                <div class="skill-box seo">
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <div class="skill-card">
+                    <i class="fa-solid fa-chart-line"></i>
                     <h3>Technical SEO</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">Crawlability, Site Architecture, Indexing Schema</p>
+                    <p>Optimizing architectural indexing schemas, search parameters, performance metrics, and crawlability frameworks to dominate rankings.</p>
                 </div>
-                <div class="skill-box smm">
-                    <i class="fa-solid fa-share-nodes"></i>
-                    <h3>Social Media Manager</h3>
+                <div class="skill-card">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Social Media Operations</h3>
+                    <p>Executing continuous target outreach frameworks, structural brand management, and direct high-conversion asset engagement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Case Folders -->
+        <section>
+            <h2><i class="fa-solid fa-folder-open"></i> Selected Engineering Projects</h2>
+            
+            <div class="project-block">
+                <h3>Full-Stack WordPress Platforms & Databases</h3>
+                <p>Deploying optimized automated core systems utilizing relational PostgreSQL structures and dynamic programmatic layers for enterprise infrastructure.</p>
