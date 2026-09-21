@@ -57,7 +57,7 @@
         }
         
         /* Interactive Auto-Typing Display */
-        .typing-text { font-size: 1.6rem; color: var(--text-alt); font-weight: 400; }
+        .typing-text { font-size: 1.6rem; color: var(--text-alt); font-weight: 400; min-height: 40px; }
         #dynamic-text { color: var(--primary); font-weight: 600; border-right: 3px solid var(--primary); padding-right: 5px; animation: blink-cursor 0.75s step-end infinite; }
 
         .container { max-width: 900px; margin: 0 auto; padding: 20px; }
@@ -124,13 +124,14 @@
             text-decoration: none; 
             font-size: 0.95rem; 
             transition: all 0.3s ease; 
+            cursor: pointer;
         }
         .btn-fill { background: var(--text); color: var(--bg); }
         .btn-fill:hover { background: var(--primary); color: var(--bg); transform: translateY(-2px); }
         .btn-outline { background: transparent; color: var(--text); border: 1px solid rgba(255,255,255,0.1); }
         .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-        /* Fixed High-Performance Floating WhatsApp System */
+        /* Floating WhatsApp Button using safe JavaScript triggers */
         .whatsapp-anchor {
             position: fixed;
             bottom: 40px;
@@ -146,7 +147,7 @@
             font-size: 32px;
             box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
             z-index: 9999;
-            text-decoration: none;
+            cursor: pointer;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .whatsapp-anchor:hover {
@@ -166,14 +167,10 @@
 </head>
 <body>
 
-    <!-- Ultra-Secure Universal WhatsApp Redirect Link Architecture (Fixed Number Deployment) -->
-    <a href="https://whatsapp.com." 
-       class="whatsapp-anchor" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       title="Connect on WhatsApp">
+    <!-- Floating Secure Script Trigger Button -->
+    <div class="whatsapp-anchor" onclick="openWhatsApp()" title="Connect on WhatsApp">
         <i class="fab fa-whatsapp"></i>
-    </a>
+    </div>
 
     <header>
         <span class="hero-badge">Available for Projects & Freelance</span>
@@ -218,3 +215,7 @@
             <div class="project-block">
                 <h3>Full-Stack WordPress Platforms & Databases</h3>
                 <p>Deploying optimized automated core systems utilizing relational PostgreSQL structures and dynamic programmatic layers for enterprise infrastructure.</p>
+                <div class="tags-container">
+                    <span class="tag-badge">WordPress</span>
+                    <span class="tag-badge">FastAPI</span>
+                    <span class="tag-badge">PostgreSQL</span>
