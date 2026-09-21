@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Nafees | Premium Portfolio</title>
-    <!-- FontAwesome Library Included Securely -->
+    <title>M. Nafees | Elite Digital Portfolio</title>
+    <!-- Premium Icons Grid -->
     <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Clean Google Fonts Typography -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -19,17 +20,17 @@
             --text: #f8fafc;
             --text-alt: #94a3b8;
             --whatsapp: #22c55e;
-            --ripple-blue: rgba(56, 189, 248, 0.4);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
         body { background-color: var(--bg); color: var(--text); line-height: 1.7; overflow-x: hidden; }
 
         header { 
-            padding: 140px 20px 100px 20px; 
+            padding: 120px 20px 80px 20px; 
             text-align: center; 
             position: relative;
             background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.15), transparent 60%);
+            border-bottom: 1px solid rgba(255,255,255,0.02);
         }
         
         .hero-badge {
@@ -45,79 +46,78 @@
         }
 
         header h1 { 
-            font-size: 4rem; 
+            font-size: 3.8rem; 
             margin-bottom: 15px; 
             font-weight: 800; 
-            letter-spacing: -2px;
-            background: linear-gradient(135deg, #ffffff 40%, var(--text-alt));
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #ffffff 50%, var(--text-alt));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
-        .typing-text { font-size: 1.6rem; color: var(--text-alt); font-weight: 400; min-height: 40px; }
+        .typing-text { font-size: 1.5rem; color: var(--text-alt); font-weight: 400; min-height: 40px; }
         #dynamic-text { color: var(--primary); font-weight: 600; border-right: 3px solid var(--primary); padding-right: 5px; animation: blink-cursor 0.75s step-end infinite; }
 
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
         
         section { 
             background: rgba(15, 23, 42, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            padding: 45px; 
-            margin-bottom: 40px; 
-            border-radius: 24px; 
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 40px; 
+            margin-bottom: 35px; 
+            border-radius: 20px; 
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
         section:hover { 
-            transform: translateY(-5px); 
+            transform: translateY(-4px); 
             border-color: rgba(56, 189, 248, 0.2);
-            background: rgba(15, 23, 42, 0.6);
-            box-shadow: 0 30px 60px -15px rgba(0,0,0,0.8);
+            background: rgba(15, 23, 42, 0.5);
         }
         
-        h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 30px; display: flex; align-items: center; gap: 12px; color: #fff; }
-        h2 i { color: var(--primary); font-size: 1.4rem; }
+        h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 25px; display: flex; align-items: center; gap: 12px; color: #fff; }
+        h2 i { color: var(--primary); font-size: 1.3rem; }
 
+        /* Custom Grid Configuration */
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
         .skill-card { 
             background: rgba(255, 255, 255, 0.01); 
             border: 1px solid rgba(255, 255, 255, 0.03); 
-            padding: 30px 24px; 
-            border-radius: 16px; 
+            padding: 25px 20px; 
+            border-radius: 14px; 
         }
-        .skill-card i { font-size: 2.2rem; color: var(--accent); margin-bottom: 15px; display: block; }
-        .skill-card h3 { font-size: 1.25rem; margin-bottom: 8px; color: #fff; }
-        .skill-card p { color: var(--text-alt); font-size: 0.9rem; }
+        .skill-card i { font-size: 2rem; color: var(--accent); margin-bottom: 12px; display: block; }
+        .skill-card h3 { font-size: 1.2rem; margin-bottom: 6px; color: #fff; }
+        .skill-card p { color: var(--text-alt); font-size: 0.88rem; }
 
         .project-block { 
-            background: rgba(3, 7, 18, 0.4); 
-            padding: 30px; 
-            border-radius: 16px; 
+            background: rgba(3, 7, 18, 0.3); 
+            padding: 25px; 
+            border-radius: 14px; 
             border: 1px solid rgba(255,255,255,0.02);
-            margin-bottom: 20px; 
+            margin-bottom: 15px; 
         }
-        .project-block h3 { color: #fff; font-size: 1.3rem; margin-bottom: 10px; }
-        .project-block p { color: var(--text-alt); font-size: 0.95rem; }
-        .tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
-        .tag-badge { font-size: 0.75rem; background: rgba(255,255,255,0.04); color: var(--primary); padding: 4px 12px; border-radius: 6px; font-weight: 600; }
+        .project-block h3 { color: #fff; font-size: 1.25rem; margin-bottom: 8px; }
+        .project-block p { color: var(--text-alt); font-size: 0.92rem; }
+        .tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .tag-badge { font-size: 0.72rem; background: rgba(255,255,255,0.04); color: var(--primary); padding: 3px 10px; border-radius: 5px; font-weight: 600; }
 
-        /* Premium Interactive Interactive Contact Framework Buttons */
+        /* Solid Control Row System */
         .action-row { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 25px; }
         
         .action-btn { 
-            position: relative;
             display: inline-flex; 
             align-items: center; 
             gap: 10px; 
-            padding: 14px 30px; 
-            border-radius: 12px; 
+            padding: 12px 28px; 
+            border-radius: 10px; 
             font-weight: 600; 
             text-decoration: none; 
             font-size: 0.95rem; 
-            transition: all 0.3s ease; 
+            transition: all 0.2s ease; 
             cursor: pointer;
-            overflow: hidden;
+            border: none;
         }
         .btn-fill { background: var(--text); color: var(--bg); }
         .btn-fill:hover { background: var(--primary); color: var(--bg); transform: translateY(-2px); }
@@ -125,61 +125,56 @@
         .btn-outline { background: transparent; color: var(--text); border: 1px solid rgba(255,255,255,0.1); }
         .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-        /* 100% Fixed Floating WhatsApp System with Glow Ripple Engine */
+        /* Solid Fail-Safe Floating WhatsApp Link System */
         .whatsapp-anchor {
             position: fixed;
             bottom: 40px;
             right: 40px;
             background-color: var(--whatsapp);
             color: #fff !important;
-            width: 65px;
-            height: 65px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 35px;
-            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4);
+            font-size: 32px;
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
             z-index: 99999;
-            cursor: pointer;
-            overflow: hidden;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            transition: all 0.2s ease;
         }
         .whatsapp-anchor:hover {
-            transform: scale(1.1) translateY(-5px);
-            box-shadow: 0 15px 35px rgba(34, 197, 94, 0.6);
+            transform: scale(1.08) translateY(-4px);
+            box-shadow: 0 12px 30px rgba(34, 197, 94, 0.5);
+            background-color: #1ed760;
         }
-        .whatsapp-anchor i { pointer-events: none; position: relative; z-index: 2; }
-
-        /* Dynamic Blue Custom Click Ripple Object style */
-        .ripple {
-            position: absolute;
-            background: var(--ripple-blue);
-            border-radius: 50%;
-            transform: scale(0);
-            animation: ripple-animation 0.5s linear;
-            pointer-events: none;
-            z-index: 1;
+        
+        /* Interactive Pure Click Glow Feedback effect styling */
+        .action-btn:active, .whatsapp-anchor:active {
+            background-color: #00f2fe !important;
+            color: #000 !important;
+            box-shadow: 0 0 15px #00f2fe !important;
         }
 
-        @keyframes ripple-animation {
-            to { transform: scale(4); opacity: 0; }
-        }
         @keyframes blink-cursor { from, to { border-color: transparent } 50% { border-color: var(--primary); } }
 
         @media(max-width: 768px) {
-            header h1 { font-size: 2.8rem; }
-            section { padding: 30px 20px; }
-            .whatsapp-anchor { bottom: 25px; right: 25px; width: 60px; height: 60px; font-size: 30px; }
+            header h1 { font-size: 2.6rem; }
+            section { padding: 25px 20px; }
+            .whatsapp-anchor { bottom: 25px; right: 25px; width: 55px; height: 55px; font-size: 28px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Native JavaScript Trigger WhatsApp Node -->
-    <div class="whatsapp-anchor" id="waButton" title="Connect on WhatsApp">
+    <!-- Direct Deep-Link WhatsApp Gateway System -->
+    <a href="https://wa.me!" 
+       class="whatsapp-anchor" 
+       target="_blank" 
+       title="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
-    </div>
+    </a>
 
     <header>
         <span class="hero-badge">Available for Projects & Freelance</span>
@@ -227,3 +222,5 @@
                 </div>
             </div>
         </section>
+
+        <section style="background: radial-gradient(circle at bottom right, rgba(129, 140, 242, 0.06), transparent), rgba(15, 23, 42, 0.4);">
